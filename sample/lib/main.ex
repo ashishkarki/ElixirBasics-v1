@@ -17,7 +17,7 @@ defmodule Sample.CLI do
       args
       |> OptionParser.parse(switches: [upcase: :boolean])
 
-      {opts, List.to_string(word)}
+    {opts, List.to_string(word)}
   end
 
   defp response({opts, word}) do
