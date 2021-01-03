@@ -1,7 +1,7 @@
 defmodule TaskExample do
   def double(x) do
     :timer.sleep(2000)
-    IO.puts "Result from async task: #{x * 2}"
+    IO.puts("Result from async task: #{x * 2}")
   end
 
   def runner() do

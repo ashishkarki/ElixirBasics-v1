@@ -12,7 +12,7 @@ defmodule Mix.Tasks.Sample do
     # calling more functions
     ErrorHandling.handleError()
     TryCatch.catcherInTheTry()
-
-    TaskExample.runner()
+    # TaskExample.runner()
+    MetaprogramBasic.runner()
   end
 end
