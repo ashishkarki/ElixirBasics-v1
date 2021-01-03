@@ -8,5 +8,9 @@ defmodule Mix.Tasks.Sample do
 
     # calling Sample.say()
     Sample.say()
+
+    # calling more functions
+    ErrorHandling.handleError()
+    TryCatch.catcherInTheTry()
   end
 end

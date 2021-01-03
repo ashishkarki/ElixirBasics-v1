@@ -3,13 +3,13 @@ defmodule Greeter do
     Provides a function `hello/1` to greet its invoker
   """
 
-@doc """
-  Prints a hello message
+  @doc """
+    Prints a hello message
 
-  ## Parameters
-    - name: name of the person to output to the console
-"""
-@spec hello(String.t()) :: String.t()
+    ## Parameters
+      - name: name of the person to output to the console
+  """
+  @spec hello(String.t()) :: String.t()
   def hello(name) do
     "Hello, " <> name
   end

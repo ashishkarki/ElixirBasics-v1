@@ -20,20 +20,19 @@ defmodule Anagram do
     sort_string(a) == sort_string(b)
   end
 
-@doc """
-  sorts the graphemes/characters in a given string
-  ## Parameters
-  - str: the string to sort
-  ## Examples
-  - sort_string("acb") => "abc"
-"""
+  @doc """
+    sorts the graphemes/characters in a given string
+    ## Parameters
+    - str: the string to sort
+    ## Examples
+    - sort_string("acb") => "abc"
+  """
   def sort_string(str) do
     str
     |> String.downcase()
     |> String.graphemes()
     |> Enum.sort()
   end
-
 end
 
 Anagram.anagrams?("Hello", "hello")
