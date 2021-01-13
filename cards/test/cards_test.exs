@@ -12,7 +12,7 @@ defmodule CardsTest do
   end
 
   test "shuffle randomizes a deck" do
-    deck = Cards.create_deck
+    deck = Cards.create_deck()
     # assert deck != Cards.shuffle(deck)
     refute deck == Cards.shuffle(deck)
   end
