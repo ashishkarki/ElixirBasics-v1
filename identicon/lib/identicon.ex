@@ -21,9 +21,11 @@ defmodule Identicon do
 
   # image is list of numbers, stored as Identicon.Image struct
   def pick_color(image) do
-    %Identicon.Image{hex: hex_list} = image
-    # pick only the first 3 values
-    [r, g, b | _tail] = hex_list
+    # %Identicon.Image{hex: hex_list} = image
+    # # pick only the first 3 values
+    # [r, g, b | _tail] = hex_list
+
+    %Identicon.Image{hex: [r, g, b | _tail]} = image
 
     # update image Identicon.Image struct with "color" property
     %Identicon.Image{image | color: {r, g, b}}
